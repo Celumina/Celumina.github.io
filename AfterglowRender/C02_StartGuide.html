@@ -4223,19 +4223,19 @@ body,
 </code></pre>
 <h3 id="understanding-material-asset">Understanding Material Asset</h3>
 <p>In <em>AfterglowRender</em>, we use seperate material asset files to define the pipeline states and resources. The diagram below shows the sturcture of the material asset.</p>
-<p><img src="file:///c:\Works\AfterglowRender\Documents\Architecture\Images\C00_MaterialAsset.jpg" alt="C00_MaterialAsset"></p>
+<p><img src="Images\C00_MaterialAsset.jpg" alt="C00_MaterialAsset"></p>
 <p>Material asset stored in <code>json</code> format. Some fields and enumerations are not shown in the diagram; for more details, refer to <a href="https://github.com/Celumina/AfterglowRender/blob/main/vsbuild/Documents/AssetStruct/Material.md">Documents/AssetStruct/Material.md</a>.</p>
 <h3 id="shader-asset">Shader Asset</h3>
 <p><em>AfterglowRender</em> uses <a href="https://learn.microsoft.com/en-us/windows/win32/direct3dhlsl/dx-graphics-hlsl">HLSL</a> as shader language. Thanks to the material system, there is not need to write strictly aligned resource declarations in shaders.</p>
-<p><img src="file:///c:\Works\AfterglowRender\Documents\Architecture\Images\C00_ShaderAsset.jpg" alt="C00_ShaderAsset"></p>
+<p><img src="Images\C00_ShaderAsset.jpg" alt="C00_ShaderAsset"></p>
 <p>Some internal variables can be used in shaders, e.g. transform matrices, system status and entity infomations. For more details, see <a href="https://github.com/Celumina/AfterglowRender/blob/main/vsbuild/Documents/Shader/InternalVariables.md">Documents/Shader/InternalVariables.md</a>.</p>
 <h3 id="edit-material-and-shader-in-flight">Edit Material and Shader in Flight</h3>
 <p>Once you were completed entity and material configurations, relavant materials and shaders can be modified at runtime. Simply use your preferred text editor to edit material or shader asset, and the changes will take effect immediately after you save the file.</p>
 <p>If a problematic shader code is submitted, the system will apply a default error material as replacement, and the error infomation will be output to the console.</p>
-<p><img src="file:///c:\Works\AfterglowRender\Documents\Architecture\Images\C02_ErrorShader.jpg" alt="C02_ErrorShader"></p>
+<p><img src="Images\C02_ErrorShader.jpg" alt="C02_ErrorShader"></p>
 <h3 id="compute-workflow">Compute Workflow</h3>
 <p>To enable the compute workflow for a material asset, you need to add the following ComputeTask field to the material asset file:</p>
-<p><img src="file:///c:\Works\AfterglowRender\Documents\Architecture\Images\C00_ComputeTask.jpg" alt="C00_ComputeTask"></p>
+<p><img src="Images\C00_ComputeTask.jpg" alt="C00_ComputeTask"></p>
 <p>For more details about ComputeTask fields and enumerations, see <a href="https://github.com/Celumina/AfterglowRender/blob/main/vsbuild/Documents/AssetStruct/MaterialComputeTask.md">Documents/AssetStruct/MaterialComputeTask.md</a></p>
 <h2 id="component-development">Component Development</h2>
 <p>This part demonstrates how to create a new componennt for custom purposes.</p>
@@ -4357,7 +4357,7 @@ body,
 	_system.<span class="hljs-built_in">addComponent</span>&lt;MyComponent&gt;(exampleEntity);
 
 </code></pre>
-<p><img src="file:///c:\Works\AfterglowRender\Documents\Architecture\Images\C02_ExampleEntity.jpg" alt="C02_ExampleEntity"></p>
+<p><img src="Images\C02_ExampleEntity.jpg" alt="C02_ExampleEntity"></p>
 </div>
         </div>
             
