@@ -3817,6 +3817,7 @@ body,
 </style>
         
 
+
 <style>
   h1 {
     font-size: 200%;
@@ -3844,7 +3845,7 @@ body,
   p {
     padding-top: 8px;
     padding-bottom: 8px;
-    text-indent: 2em;
+    text-indent: 0em;
     padding-left: 16px;
     padding-right: 16px;
     font-size: 80%;
@@ -3853,8 +3854,8 @@ body,
   }
 
   li {
-    font-size: 80%;
     padding-bottom: 8px;
+    font-size: 80%;
   }
 
   .github-markdown-body table {
@@ -3887,6 +3888,10 @@ body,
     border: 0px;
   }
 
+  .github-markdown-body table tr:nth-child(2n) {
+    background-color: #ffffff88;  
+  }
+
   img {
     border-radius: 12px;
     box-shadow: 2px 2px 4px #00000088;
@@ -3895,6 +3900,7 @@ body,
   }
 
   .github-markdown-body pre {
+    margin-bottom: 16px;
     padding: 16px;
     background-color: #ffffff88;
 
@@ -4004,7 +4010,7 @@ body,
       color: white;
   }
 
-  @media (max-width: 60rem) {
+  @media (max-width: 768px) {
       .fixed-aside-tags {
           display: none; 
       }
